@@ -45,7 +45,7 @@
 				$(data.teams[0].roster).each(function(index, item) {
 					
 					var prodSquare = "<span class=\"teamone\">" + item.name + "</span>";
-					prodSquare += "<span class=\"class\"><img src=\"../../StaticPictures/ClassLogos/" + item.class + ".png\" class=\"classimg\"></img></span>";
+					prodSquare += "<span class=\"class\"><img src=\"../../Static/ClassLogos/" + item.class + ".png\" class=\"classimg\"></img></span>";
 					prodSquare += "<span class=\"teamtwo\">" + data.teams[1].roster[index].name + "</span>";
 					
 					$("#rosterlist").append('<li>' + prodSquare + '</li>');
@@ -55,7 +55,7 @@
 		});
 	</script>
 </head>
-<body background="..\StaticPictures\TransparentBackground.png">
+<body background="..\Static\TransparentBackground.png">
 
 	<ul id="rosterlist" class="rosters">
 	</ul>

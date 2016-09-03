@@ -19,11 +19,13 @@
 				$('#teamonelong').text(data.teams[0].long);
 				$('#teamtwoshort').text(data.teams[1].short);
 				$('#teamtwolong').text(data.teams[1].long);
+				
+				$('#matchdisplayframe').attr("src", $('#matchdisplayframe').attr("src"));
 			});
 		});
 	</script>
 </head>
-<body background="..\StaticPictures\TransparentBackground.png">
+<body background="..\Static\TransparentBackground.png">
 
 <table style="width: 1920px; text-align: center">
 	<tr>
@@ -40,7 +42,7 @@
 		</td>
 		<td style="width:800px">
 			<div style="height: 50px">&nbsp;</div>
-			<iframe src="MatchDisplay.html" frameBorder="0"
+			<iframe id="matchdisplayframe" src="MatchDisplay.html" frameBorder="0"
 					width="100%" height="300px"></iframe>
 		</td>
 		<td style="width:540px;padding-right: 20px">
