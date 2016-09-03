@@ -56,14 +56,14 @@ Click on "Preview Stream" and you should see everything working.
 
 Open up the \PerGamePics\htmlpages\SetupFile.json
 
-'''
+```
 NOTE: If you have OBS running and you change something in the json file.
 IT WILL NOT AUTOMATICALLY UPDATE THE PAGE. In order to update the page,
 either restart the preview or force refresh the clr source. 
 
 The easiest way I've found to do this is to right click on the source > properties
 Change the Opacity very slighty and click OK. This should refresh the page.
-'''
+```
 
 ## Authors
 
