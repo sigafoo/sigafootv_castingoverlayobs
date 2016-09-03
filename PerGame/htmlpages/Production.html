@@ -66,9 +66,16 @@
 				
 				//by default the picture width is ~190 + 10 for the padding, times that by the number of production people we have
 				$("#productionlist").width((190+10) * data.production.length);
+			})
+			.error(function(jqXHR, textStatus, errorThrown)			{
+				$("#productionlist").append('<li>' + errorThrown + '</li>');
+				$("#productionlist").append('<li>' + textStatus + '</li>');
+				
+				//console.log("error " + textStatus);
+				//console.log("incoming Text " + jqXHR.responseText)
 			});
-			
 		});
+			
 	</script>
 </head>
 <body background="..\Static\TransparentBackground.png">
@@ -76,6 +83,5 @@
 
 <ul id="productionlist" class="listofproduction transparent">
 </ul>
-
 </body>
 </html>

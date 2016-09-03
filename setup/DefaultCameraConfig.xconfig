@@ -1293,7 +1293,7 @@ global sources : {
       extentWidth : 500
       extentHeight : 300
       align : 1
-      file : "C:\\tf2camera\\PerGamePics\\Text\\midgame-scroll.txt"
+      file : "C:\\tf2camera\\PerGame\\Text\\midgame-scroll.txt"
       text : 
       mode : 1
     }
@@ -1327,7 +1327,7 @@ global sources : {
       extentWidth : 600
       extentHeight : 600
       align : 1
-      file : "C:\\tf2camera\\PerGamePics\\Text\\endgame-scroll.txt"
+      file : "C:\\tf2camera\\PerGame\\Text\\endgame-scroll.txt"
       text : 
       mode : 1
     }
