@@ -16,13 +16,17 @@ NOTE: You definitely can use obs studios, but you'll have to manually build the 
 ### Getting it working
 
 ```
-  NOTE: The files don't actually need to be in this exact folder. This is purely so that if you are using my config for obs classic. You won't have to change any of the clr properties to have it work initially.
+NOTE: The files don't actually need to be in this exact folder. 
+This is purely so that if you are using my config for obs classic. 
+You won't have to change any of the clr properties to have it work initially.
 ```
 
 Download the zip of this repository and extract the files to "c:\tf2camera"
 
 So it should look like: 
+
 C:\tf2camera\PerGamePics
+
 C:\tf2camera\StaticPictures
 
 
@@ -34,6 +38,7 @@ Scene Collection > Export
 ```
 
 Import the \obsconfig\DefaultCameraConfig.xconfig into obs classic
+
 Scene Collection > Import
 
 That's it.
@@ -41,11 +46,12 @@ That's it.
 ## Give it a test
 
 Underneath "Scenes" select: Waiting_Prior_Background
+
 Click on "Preview Stream" and you should see everything working.
 
 ## Authors
 
-* **Derek Sigafoo** - *Initial set up of all pages and obs config*
+* **Derek Sigafoo** - http://twitch.tv/sigafoo
 
 ## Acknowledgments
 
