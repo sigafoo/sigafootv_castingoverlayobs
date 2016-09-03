@@ -9,6 +9,7 @@ Also check out http://sigafoo.tv/casting for more casting help
 * OBS Classic: https://obsproject.com/
 * CLR Plugin for obs classic: https://obsproject.com/forum/resources/clr-browser-source-plugin.22/
 * Video source plugin for obs classic: https://obsproject.com/forum/resources/video-source-plugin.20/
+* NotePad++: https://notepad-plus-plus.org/ (not required, but better than editing with textpad)
 
 ```
 NOTE: You definitely can use obs studios, but you'll have to manually build the scenes.
@@ -45,11 +46,24 @@ Scene Collection > Import
 
 That's it.
 
-## Give it a test
+### Give it a test
 
 Underneath "Scenes" select: Waiting_Prior_Background
 
 Click on "Preview Stream" and you should see everything working.
+
+# Customize your cast
+
+Open up the \PerGamePics\htmlpages\SetupFile.json
+
+'''
+NOTE: If you have OBS running and you change something in the json file.
+IT WILL NOT AUTOMATICALLY UPDATE THE PAGE. In order to update the page,
+either restart the preview or force refresh the clr source. 
+
+The easiest way I've found to do this is to right click on the source > properties
+Change the Opacity very slighty and click OK. This should refresh the page.
+'''
 
 ## Authors
 
