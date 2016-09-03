@@ -1,0 +1,120 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Patua%20One"></link>
+    <style>
+       body {
+		font-family: 'Patua One';		
+	  }
+	  
+	  .transparent{
+			  background:rgba(0,0,0,0.6);
+			}
+			
+	  .map
+	  {
+		text-align: center;
+	  }
+	  
+	  .red
+	  {
+		color: #B93839;
+	  }
+	  
+	  .blu
+	  {
+		color: #5A7B90;
+	  }
+	  
+	  
+	  .column-left{ float: left; width: 33%; text-align: right; }
+	  .column-right{ float: right; width: 33%; text-align: left;  }
+	  .column-center{ display: inline-block; width: 33%;  }
+			  
+	  .mapname
+	  {
+		font-size: 40px;
+		width: 300px;
+		color: white;
+		font-style: bolder;
+	  }
+	  
+	  
+    </style>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$.getJSON('SetupFile.json', function (data) {
+				$('#teamoneshortmapone').text(data.teams[0].short);
+				$('#teamoneshortmaptwo').text(data.teams[0].short);
+				$('#teamoneshortmapthree').text(data.teams[0].short);
+				
+				$('#teamtwoshortmapone').text(data.teams[1].short);
+				$('#teamtwoshortmaptwo').text(data.teams[1].short);
+				$('#teamtwoshortmapthree').text(data.teams[1].short);
+				
+				
+				$('#maponename').text(data.maps[0].name);
+				$('#maptwoname').text(data.maps[1].name);
+				$('#mapthreename').text(data.maps[2].name);
+				
+				updatescores(data);
+			});
+		});		
+		
+		function updatescores(jsonData)
+		{
+			$('#maponescore').text(jsonData.maps[0].score);
+			$('#maptwoscore').text(jsonData.maps[1].score);
+			$('#mapthreescore').text(jsonData.maps[2].score);
+		}
+	</script>
+</head>
+<body background="..\..\StaticPictures\TransparentBackground.png">
+	<table id="scoreboard" class="transparent" style="text-align: center; 
+								border-radius: 15px 15px 15px 15px;">
+		<tr>
+			<td width="300px"  class="mapname">
+				<!---
+						<img src="..\..\StaticPictures\trophy.png" style="max-width:30px;max-height:30px" />
+						MAP 1
+				--->
+				<div id="maponename" class="map" style="width: 100%">
+				</div>
+				<div>
+				   <div id="maponescore" class="column-center"></div>
+				   <div id="teamoneshortmapone" class="column-left red"></div>
+				   <div id="teamtwoshortmapone"  class="column-right blu"></div>
+				</div>
+			</td>
+			<td style="width: 10px">
+				&nbsp;
+			</td>
+			<td class="mapname">	
+				<div id="maptwoname" class="map" style="width: 100%">
+				</div>
+				<div>
+				   <div id="maptwoscore" class="column-center"></div>
+				   <div id="teamoneshortmaptwo" class="column-left red"></div>
+				   <div id="teamtwoshortmaptwo"  class="column-right blu"></div>
+				</div>
+			</td>
+			<td style="width: 10px">
+				&nbsp;
+			</td>
+			<td class="mapname">		
+				<div id="mapthreename" class="map" style="width: 100%">
+				</div>
+				<div>
+				   <div id="mapthreescore" class="column-center"></div>
+				   <div id="teamoneshortmapthree" class="column-left red"></div>
+				   <div id="teamtwoshortmapthree"  class="column-right blu"></div>
+				</div>
+			</td>
+			<td style="width: 10px">
+				&nbsp;
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

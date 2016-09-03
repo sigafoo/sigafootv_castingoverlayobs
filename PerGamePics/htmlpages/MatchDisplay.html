@@ -1,0 +1,34 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto"></link>
+	<style>
+	  body {
+		font-family: 'Roboto';		
+	  }
+	  
+	  .transparent{
+			  background:rgba(0,0,0,0.6);
+			}
+	</style>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$.getJSON('SetupFile.json', function (data) {
+				$('#gametitle').text(data.gametitle);
+			});
+		});
+	</script>
+</head>
+<body background="..\..\StaticPictures\TransparentBackground.png">
+
+<div style="text-align:center;">
+	<img src="..\..\StaticPictures\ugclogo.png" />
+	<div id="gametitle" style="margin-top: -10px; 	text-shadow: 2px 2px #000000;
+				font-size: 50px; font-weight: bolder; color: white">
+				
+	</div>
+</div>
+
+</body>
+</html>

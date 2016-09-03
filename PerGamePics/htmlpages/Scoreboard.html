@@ -1,0 +1,94 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Patua%20One"></link>
+    <style>
+       body {
+		font-family: 'Patua One';		
+	  }
+	  
+	  .transparent{
+			  background:rgba(0,0,0,0.6);
+			}
+			
+	  .red
+	  {
+		color: #B93839;
+	  }
+	  
+	  .blu
+	  {
+		color: #5A7B90;
+	  }
+	  
+	  
+	  .column-left{ float: left; width: 33%; text-align: right; }
+	  .column-right{ float: right; width: 33%; text-align: left;  }
+	  .column-center{ display: inline-block; width: 33%;  }
+			  
+	  .mapnamename
+	  {
+		font-size: 40px;
+		color: white;
+		font-style: bolder;
+		text-align: center; 
+		border-radius: 15px 15px 15px 15px;			
+		margin:0;
+		padding: 0;
+	  }
+	  
+	  
+	  ul#scoreboard li{
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        list-style-type: none;
+		width: 300px;			
+		margin:0;
+		padding: 0;
+	  }
+	  
+	  .mapName { display: inline-block; width: 100%; }
+	  .mapTeamOne { }
+	  .mapTeamTwo { }
+	  .mapScore { }
+    </style>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$.getJSON('SetupFile.json', function (data) {
+				
+				//Iterator over each production item inside the json file
+				$(data.maps).each(function(index, item) {
+					
+					//MAP NAME
+					var prodSquare = "<span class=\"mapName\">" + item.name + "</span>";    		
+					//SCORE
+					prodSquare += "<span class=\"mapScore column-center\">" + item.score + "</span>";
+					//Team 1 name
+					prodSquare += "<span class=\"mapTeamOne column-left red\">" + data.teams[0].short + "</span>";
+					
+					//Team 2 name
+					prodSquare += "<span class=\"mapTeamTwo column-right blu\">" + data.teams[1].short + "</span>";
+					
+					
+					$("#scoreboard").append('<li>' + prodSquare + '</li>');
+					
+				});
+				
+				$("#scoreboard").width(((300) * data.maps.length));
+			})
+		   .fail(function( jqxhr, textStatus, error ) {
+				var err = textStatus + ", " + error;
+				console.log( "Request Failed: " + err );
+			});
+		});		
+	</script>
+</head>
+<body background="..\..\StaticPictures\TransparentBackground.png">
+	<center>
+		<ul id="scoreboard" class="mapnamename transparent">
+		</ul>
+	</center>
+</body>
+</html> 

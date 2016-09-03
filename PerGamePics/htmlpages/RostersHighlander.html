@@ -1,0 +1,65 @@
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto"></link>
+	<style>
+	  body {
+		font-family: 'Roboto';		
+	  }
+	  
+	  .transparent{
+			  background:rgba(0,0,0,0.6);
+			}
+			
+	  .rosters
+	  {
+		font-size: 60px;
+		color: white;
+		text-align: center; 		
+		margin:0;
+		padding: 0;
+		width: 900px;
+		list-style-type: none;
+	  }
+	  
+	  
+	  ul#rosterlist li{	
+		margin:0;
+		padding: 0;
+		height: 73px;
+	  }
+	  
+	  .teamone	{	vertical-align: middle; text-align: center; float: left; width: 300px; }
+	  .teamtwo 	{	vertical-align: middle; text-align: center; float: right; width: 300px; }
+	  .class {   width: 140px; text-align: center; diplay: inline-block; }
+	  .classimg {  vertical-align: middle; }
+	  
+	  
+	</style>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$.getJSON('SetupFile.json', function (data) {
+				
+				$(data.teams[0].roster).each(function(index, item) {
+					
+					var prodSquare = "<span class=\"teamone\">" + item.name + "</span>";
+					prodSquare += "<span class=\"class\"><img src=\"../../StaticPictures/ClassLogos/" + item.class + ".png\" class=\"classimg\"></img></span>";
+					prodSquare += "<span class=\"teamtwo\">" + data.teams[1].roster[index].name + "</span>";
+					
+					$("#rosterlist").append('<li>' + prodSquare + '</li>');
+					
+				});
+			})
+		});
+	</script>
+</head>
+<body background="..\StaticPictures\TransparentBackground.png">
+
+	<ul id="rosterlist" class="rosters">
+	</ul>
+
+
+</body>
+</html>

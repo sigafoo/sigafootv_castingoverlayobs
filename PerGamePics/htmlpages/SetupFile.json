@@ -1,0 +1,69 @@
+{
+	"gametitle": "Season 19 Platinum Grand Finals",
+    "production":[
+				{
+					"name":"sigafoo",
+					"role":"",
+					"pic":"caster1.jpg",
+					"twitter":""
+				},
+				{
+					"name":"eXtine", 
+					"role":"",
+					"pic":"caster2.jpg",
+					"twitter":""
+				},
+				{
+					"name":"VoxDei",
+					"role":"",
+					"pic":"camera.jpg",
+					"twitter":""
+				}
+			],
+	"teams":[
+				{
+					"short":"KND",
+					"long":"The Kids",
+					"roster":[
+						{ "class":"scout", "name":"slemnish" },
+						{ "class":"soldier", "name":"Etney" },
+						{ "class":"pyro", "name":"Katsy" },
+						{ "class":"demo", "name":"Giraffe" },
+						{ "class":"heavy", "name":"Blues" },
+						{ "class":"engineer", "name":"Ender" },
+						{ "class":"medic", "name":"Nursey" } ,
+						{ "class":"sniper", "name":"yosh"},
+						{ "class":"spy", "name":"deaft"}
+					]
+				},
+				{
+					"short":"DK",
+					"long":"Dunning-Kruger Effect v4",
+					"roster":[
+						{ "class":"scout", "name":"Vand" },
+						{ "class":"soldier", "name":"Aegis" },
+						{ "class":"pyro", "name":"Billysaurus"},
+						{ "class":"demo", "name":"Corsa"},
+						{ "class":"heavy", "name":"Karl"},
+						{ "class":"engineer", "name":"spamfest"},
+						{ "class":"medic", "name":"Skeez"},
+						{ "class":"sniper", "name":"bo4r"},
+						{ "class":"spy", "name":"feint" }
+					]
+				}				
+			],
+	"maps":[
+				{
+					"name":"ASHVILLE",
+					"score":"0-0"
+				},
+				{
+					"name":"STEEL",
+					"score":"0-0"
+				},
+				{
+					"name":"PRODUCT",
+					"score":"0-0"
+				}
+			]
+}

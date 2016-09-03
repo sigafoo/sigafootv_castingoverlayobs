@@ -1,0 +1,81 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Roboto"></link>
+	<style>
+	  body {
+		font-family: 'Roboto';		
+	  }
+	  
+	  .transparent{
+			  background:rgba(0,0,0,0.6);
+			}
+			
+	  .listofproduction
+	  {
+		float:right;
+		text-align: center;
+		font-size: 40px;
+		color: white; 
+		border-radius: 15px 15px 15px 15px;
+		padding-left: 10px; 
+		padding-bottom: 15px;
+	  }
+	  
+	  ul#productionlist li{
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        list-style-type: none;
+        vertical-align: middle;
+		padding-right: 10px; 
+	  }
+	  
+	  .prodName { display: block; padding-bottom: 5px }	  
+	  .prodPic  { display: block;}
+	  .prodRole  { display: block; font-size: 20px; padding-top: 5px  }
+	  .prodTwitter  { display: block; font-size: 30px; padding-top: 5px  }
+	  
+	</style>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$.getJSON('SetupFile.json', function (data) {
+				
+				//Iterator over each production item inside the json file
+				$(data.production).each(function(index, item) {
+					var prodSquare = "<span class=\"prodName\">" + item.name + "</span>";
+					
+					//If they have a picture, add that below the name
+					if ( item.pic != null && item.pic != "" ) {
+						prodSquare += "<span class=\"prodPic\"><img src=\"..\\" + item.pic + "\"></img></span>";
+					}
+					
+					//If they have a role, add that next
+					if ( item.role != null && item.role != "" ) {
+						prodSquare += "<span class=\"prodRole\">" + item.role + "</span>";
+					}
+					
+					//If they have a role, add that next
+					if ( item.twitter != null && item.twitter != "" ) {
+						prodSquare += "<span class=\"prodTwitter\">" + item.twitter + "</span>";
+					}
+					
+					$("#productionlist").append('<li>' + prodSquare + '</li>');
+				});
+				
+				//by default the picture width is ~190 + 10 for the padding, times that by the number of production people we have
+				$("#productionlist").width((190+10) * data.production.length);
+			});
+			
+		});
+	</script>
+</head>
+<body background="..\StaticPictures\TransparentBackground.png">
+
+
+<ul id="productionlist" class="listofproduction transparent">
+</ul>
+
+</body>
+</html>

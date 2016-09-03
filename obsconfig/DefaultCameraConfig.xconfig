@@ -1,0 +1,1324 @@
+scenes : {
+  Waiting_Prior_Background : {
+    class : Scene
+    sources : {
+      Scoreboard : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 975
+        cy : 140
+        x : 472
+        y : 901
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay
+        }
+        cx : 1013
+        cy : 253
+        x : 453
+        y : 633
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionAvatars : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionAvatars
+        }
+        cx : 546
+        cy : 252
+        x : 1337
+        y : 52
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      PregameStartTime : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ScrollingWaiting_Prior
+        }
+        cx : 550
+        cy : 300
+        x : 1341
+        y : 307
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      siglogo : {
+        render : 1
+        class : BitmapImageSource
+        data : {
+          path : "C:\\tf2camera\\StaticPictures\\ProductionLogo.png"
+          opacity : 100
+          color : -1
+          useColorKey : 0
+          keyColor : -1
+          keySimilarity : 10
+          keyBlend : 0
+          monitor : 0
+        }
+        cx : 315
+        cy : 131
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      BackgroundLoop : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : BackgroundLoop
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 2596
+  }
+  Waiting_Prior_TF2 : {
+    class : Scene
+    sources : {
+      Scoreboard : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 975
+        cy : 140
+        x : 472
+        y : 901
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay
+        }
+        cx : 1013
+        cy : 253
+        x : 453
+        y : 633
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionAvatars : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionAvatars
+        }
+        cx : 546
+        cy : 252
+        x : 1337
+        y : 52
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      PregameStartTime : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ScrollingWaiting_Prior
+        }
+        cx : 550
+        cy : 300
+        x : 1341
+        y : 307
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      siglogo : {
+        render : 1
+        class : BitmapImageSource
+        data : {
+          path : "C:\\tf2camera\\StaticPictures\\ProductionLogo.png"
+          opacity : 100
+          color : -1
+          useColorKey : 0
+          keyColor : -1
+          keySimilarity : 10
+          keyBlend : 0
+          monitor : 0
+        }
+        cx : 315
+        cy : 131
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      BackgroundVideo : {
+        render : 0
+        class : VideoSource
+        data : {
+          width : 1920
+          height : 1080
+          volume : 0
+          isStretching : 0
+          isAudioOutputToStream : 1
+          audioOutputType : adummy
+          audioOutputTypeDevice : adummy
+          audioOutputDevice : 
+          isPlaylistLooping : 1
+          deinterlacing : none
+          isApplyingVideoFilter : 0
+          videoGamma : 100
+          videoContrast : 100
+          videoBrightness : 100
+          playlist : "C:\\tf2camera\\StaticPictures\\VideoBlur.mp4"
+        }
+        cx : 1920
+        cy : 1080
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Waiting_RostersHighlander : {
+    class : Scene
+    sources : {
+      Roster : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0Ijo4MDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3RcdTAwMGRcdTAwMGEgICAgICB0eXBlPSckKE1JTUVUWVBFKSdcdTAwMGRcdTAwMGEgICAgICB3aWR0aD0nJChXSURUSCknXHUwMDBkXHUwMDBhICAgICAgaGVpZ2h0PSckKEhFSUdIVCknXHUwMDBkXHUwMDBhICAgICAgZGF0YT0nJChGSUxFKSdcdTAwMGRcdTAwMGEgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcL3RmMmNhbWVyYVwvUGVyR2FtZVBpY3NcL2h0bWxwYWdlc1wvUm9zdGVyc0hpZ2hsYW5kZXIuaHRtbCIsIldpZHRoIjo4MDB9
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 800
+        cy : 800
+        x : 545
+        y : 319
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay_WithTeams : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay_WithTeams
+        }
+        cx : 1920
+        cy : 1080
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionLogo : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionLogo
+        }
+        cx : 278
+        cy : 116
+        x : 1642
+        y : 964
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      LightBox60 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : LightBox60
+        }
+        cx : 1920
+        cy : 1080
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Waiting_PickBan : {
+    class : Scene
+    sources : {
+      PickBan : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0Ijo4MDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3RcdTAwMGRcdTAwMGEgICAgICB0eXBlPSckKE1JTUVUWVBFKSdcdTAwMGRcdTAwMGEgICAgICB3aWR0aD0nJChXSURUSCknXHUwMDBkXHUwMDBhICAgICAgaGVpZ2h0PSckKEhFSUdIVCknXHUwMDBkXHUwMDBhICAgICAgZGF0YT0nJChGSUxFKSdcdTAwMGRcdTAwMGEgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcL3RmMmNhbWVyYVwvUGVyR2FtZVBpY3NcL2h0bWxwYWdlc1wvUGlja0Jhbi5odG1sIiwiV2lkdGgiOjgwMH0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 800
+        cy : 800
+        x : 560
+        y : 280
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay_WithTeams : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay_WithTeams
+        }
+        cx : 1920
+        cy : 1080
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionLogo : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionLogo
+        }
+        cx : 278
+        cy : 116
+        x : 1642
+        y : 964
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      LightBox60 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : LightBox60
+        }
+        cx : 1920
+        cy : 1080
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Waiting_PlayoffBracket : {
+    class : Scene
+    sources : {
+      playoffbracket : {
+        render : 1
+        class : BitmapImageSource
+        data : {
+          path : "C:\\tf2camera\\PerGamePics\\playoffbracket.png"
+          opacity : 100
+          color : -1
+          useColorKey : 0
+          keyColor : -1
+          keySimilarity : 10
+          keyBlend : 0
+          monitor : 0
+        }
+        cx : 1836
+        cy : 1001
+        x : 42
+        y : 39
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      PickBan : {
+        render : 0
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0Ijo4MDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzTXV0ZWQiOmZhbHNlLCJJc1Nob3dpbmdBZHZhbmNlZFByb3BlcnRpZXMiOmZhbHNlLCJPcGFjaXR5IjoxLCJUZW1wbGF0ZSI6IjxodG1sPlx1MDAwZFx1MDAwYSAgPGhlYWQ+XHUwMDBkXHUwMDBhIFx1MDAwOSAgPG1ldGEgY2hhcnNldD0ndXRmLTgnXC8+XHUwMDBkXHUwMDBhICAgICAgIDxzdHlsZT5cdTAwMGRcdTAwMGEgICAgICAgICBib2R5IHtcdTAwMGRcdTAwMGEgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICAgICAgICAgICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgICAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGEgICAgICAgICB9XHUwMDBkXHUwMDBhICAgICAgIDxcL3N0eWxlPlx1MDAwZFx1MDAwYSAgPFwvaGVhZD5cdTAwMGRcdTAwMGEgIDxib2R5Plx1MDAwZFx1MDAwYSAgICA8b2JqZWN0XHUwMDBkXHUwMDBhICAgICAgdHlwZT0nJChNSU1FVFlQRSknXHUwMDBkXHUwMDBhICAgICAgd2lkdGg9JyQoV0lEVEgpJ1x1MDAwZFx1MDAwYSAgICAgIGhlaWdodD0nJChIRUlHSFQpJ1x1MDAwZFx1MDAwYSAgICAgIGRhdGE9JyQoRklMRSknXHUwMDBkXHUwMDBhICAgICAgd21vZGU9J3RyYW5zcGFyZW50Jz5cdTAwMGRcdTAwMGEgICAgPFwvb2JqZWN0Plx1MDAwZFx1MDAwYSAgPFwvYm9keT5cdTAwMGRcdTAwMGE8XC9odG1sPlx1MDAwZFx1MDAwYSIsIlVybCI6IkM6XC90ZjJjYW1lcmFcL1BlckdhbWVQaWNzXC9QaWNrQmFuLmh0bWwiLCJWb2x1bWUiOjAsIldpZHRoIjo4MDB9
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 800
+        cy : 800
+        x : 577
+        y : 241
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay_WithTeams : {
+        render : 0
+        class : GlobalSource
+        data : {
+          name : MatchDisplay_WithTeams
+        }
+        cx : 1920
+        cy : 400
+        x : 35
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionLogo : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionLogo
+        }
+        cx : 278
+        cy : 116
+        x : 1642
+        y : 964
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      LightBox60 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : LightBox60
+        }
+        cx : 1920
+        cy : 1080
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Match_TF2 : {
+    class : Scene
+    sources : {
+      Scoreboard : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 792
+        cy : 114
+        x : 1131
+        y : 24
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionLogo : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionLogo
+        }
+        cx : 278
+        cy : 116
+        x : 0
+        y : 964
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Match_TF2_ScoreRefresh : {
+    class : Scene
+    sources : {
+      Scoreboard : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 792
+        cy : 114
+        x : 1131
+        y : 24
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionLogo : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionLogo
+        }
+        cx : 278
+        cy : 116
+        x : 0
+        y : 964
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Waiting_MidGame_Background : {
+    class : Scene
+    sources : {
+      Scoreboard : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 975
+        cy : 140
+        x : 472
+        y : 901
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay
+        }
+        cx : 1013
+        cy : 253
+        x : 453
+        y : 633
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionAvatars : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionAvatars
+        }
+        cx : 546
+        cy : 252
+        x : 1337
+        y : 52
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ScrollingWaiting_Midgame : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ScrollingWaiting_Midgame
+        }
+        cx : 500
+        cy : 300
+        x : 1372
+        y : 304
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      siglogo : {
+        render : 1
+        class : BitmapImageSource
+        data : {
+          path : "C:\\tf2camera\\StaticPictures\\ProductionLogo.png"
+          opacity : 100
+          color : -1
+          useColorKey : 0
+          keyColor : -1
+          keySimilarity : 10
+          keyBlend : 0
+          monitor : 0
+        }
+        cx : 315
+        cy : 131
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      BackgroundLoop : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : BackgroundLoop
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Waiting_MidGame_TF2 : {
+    class : Scene
+    sources : {
+      Scoreboard : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 975
+        cy : 140
+        x : 472
+        y : 901
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay
+        }
+        cx : 1013
+        cy : 253
+        x : 453
+        y : 633
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionAvatars : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionAvatars
+        }
+        cx : 546
+        cy : 252
+        x : 1337
+        y : 52
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ScrollingWaiting_Midgame : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ScrollingWaiting_Midgame
+        }
+        cx : 500
+        cy : 300
+        x : 1372
+        y : 304
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      siglogo : {
+        render : 1
+        class : BitmapImageSource
+        data : {
+          path : "C:\\tf2camera\\StaticPictures\\ProductionLogo.png"
+          opacity : 100
+          color : -1
+          useColorKey : 0
+          keyColor : -1
+          keySimilarity : 10
+          keyBlend : 0
+          monitor : 0
+        }
+        cx : 315
+        cy : 131
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Logs : {
+    class : Scene
+    sources : {
+      Chat : {
+        render : 0
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjozMDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiaHR0cDpcL1wvd3d3LnR3aXRjaGFsZXJ0cy5jb21cL3dpZGdldHNcL2NoYXQtYm94XC92MVwvNkNFQkVGM0I0RURDODMxRUUxRkEiLCJXaWR0aCI6NTAwfQ==
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 455
+        cy : 273
+        x : 57
+        y : 370
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      Scores : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 530
+        cy : 76
+        x : 32
+        y : 186
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay
+        }
+        cx : 565
+        cy : 141
+        x : 15
+        y : 42
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionLogo : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionLogo
+        }
+        cx : 249
+        cy : 104
+        x : 1671
+        y : 976
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionAvatars : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionAvatars
+        }
+        cx : 492
+        cy : 227
+        x : 52
+        y : 790
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      Logs 2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : Logs
+        }
+        cx : 1253
+        cy : 1009
+        x : 600
+        y : 28
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      LightBox95 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : LightBox95
+        }
+        cx : 1920
+        cy : 1080
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+  Waiting_PostGame_TF2 : {
+    class : Scene
+    sources : {
+      Scoreboard : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 975
+        cy : 140
+        x : 472
+        y : 901
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay
+        }
+        cx : 1013
+        cy : 253
+        x : 453
+        y : 633
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionAvatars : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionAvatars
+        }
+        cx : 546
+        cy : 252
+        x : 1337
+        y : 52
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      siglogo : {
+        render : 1
+        class : BitmapImageSource
+        data : {
+          path : "C:\\tf2camera\\StaticPictures\\ProductionLogo.png"
+          opacity : 100
+          color : -1
+          useColorKey : 0
+          keyColor : -1
+          keySimilarity : 10
+          keyBlend : 0
+          monitor : 0
+        }
+        cx : 315
+        cy : 131
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ScrollingText_EndGame : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ScrollingText_EndGame
+        }
+        cx : 600
+        cy : 600
+        x : 1308
+        y : 303
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
+        }
+        cx : 1920
+        cy : 1080
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+    }
+    hotkey : 0
+  }
+  Waiting_PostGame_Background : {
+    class : Scene
+    sources : {
+      Scoreboard : {
+        render : 1
+        class : CLRBrowserSource
+        data : {
+          sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxNDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3Qgd2lkdGg9JyQoV0lEVEgpJyBoZWlnaHQ9JyQoSEVJR0hUKSc+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J21vdmllJyB2YWx1ZT0nJChGSUxFKSc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPHBhcmFtIG5hbWU9J2FsbG93c2NyaXB0YWNjZXNzJyB2YWx1ZT0nYWx3YXlzJz48XC9wYXJhbT5cdTAwMGRcdTAwMGEgICAgICA8cGFyYW0gbmFtZT0nd21vZGUnIHZhbHVlPSd0cmFuc3BhcmVudCc+PFwvcGFyYW0+XHUwMDBkXHUwMDBhICAgICAgPGVtYmVkIFx1MDAwZFx1MDAwYSAgICAgICAgc3JjPSckKEZJTEUpJyBcdTAwMGRcdTAwMGEgICAgICAgIHR5cGU9J2FwcGxpY2F0aW9uXC94LXNob2Nrd2F2ZS1mbGFzaCcgXHUwMDBkXHUwMDBhICAgICAgICBhbGxvd3NjcmlwdGFjY2Vzcz0nYWx3YXlzJyBcdTAwMGRcdTAwMGEgICAgICAgIHdpZHRoPSckKFdJRFRIKScgXHUwMDBkXHUwMDBhICAgICAgICBoZWlnaHQ9JyQoSEVJR0hUKScgXHUwMDBkXHUwMDBhICAgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICAgIDxcL2VtYmVkPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcc2NvcmVib2FyZC5odG1sIiwiV2lkdGgiOjk3NX0=
+          instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+        }
+        cx : 975
+        cy : 140
+        x : 472
+        y : 901
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      MatchDisplay : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : MatchDisplay
+        }
+        cx : 1013
+        cy : 253
+        x : 453
+        y : 633
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ProductionAvatars : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ProductionAvatars
+        }
+        cx : 546
+        cy : 252
+        x : 1337
+        y : 52
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      siglogo : {
+        render : 1
+        class : BitmapImageSource
+        data : {
+          path : "C:\\tf2camera\\StaticPictures\\ProductionLogo.png"
+          opacity : 100
+          color : -1
+          useColorKey : 0
+          keyColor : -1
+          keySimilarity : 10
+          keyBlend : 0
+          monitor : 0
+        }
+        cx : 315
+        cy : 131
+        x : 0
+        y : 0
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      ScrollingText_EndGame : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : ScrollingText_EndGame
+        }
+        cx : 600
+        cy : 600
+        x : 1308
+        y : 303
+        crop.left : 0
+        crop.top : 0
+        crop.right : 0
+        crop.bottom : 0
+      }
+      BackgroundLoop : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : BackgroundLoop
+        }
+        cx : 1920
+        cy : 1080
+      }
+    }
+    hotkey : 0
+  }
+}
+global sources : {
+  TF2 : {
+    class : GraphicsCapture
+    data : {
+      window : "[hl2]: Team Fortress 2"
+      windowClass : Valve001
+      executable : hl2.exe
+      stretchImage : 0
+      alphaBlend : 0
+      ignoreAspect : 0
+      captureMouse : 1
+      invertMouse : 0
+      safeHook : 0
+      useHotkey : 0
+      hotkey : 123
+      gamma : 100
+    }
+    cx : 1920
+    cy : 1080
+  }
+  ProductionAvatars : {
+    class : CLRBrowserSource
+    data : {
+      sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjozMDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3RcdTAwMGRcdTAwMGEgICAgICB0eXBlPSckKE1JTUVUWVBFKSdcdTAwMGRcdTAwMGEgICAgICB3aWR0aD0nJChXSURUSCknXHUwMDBkXHUwMDBhICAgICAgaGVpZ2h0PSckKEhFSUdIVCknXHUwMDBkXHUwMDBhICAgICAgZGF0YT0nJChGSUxFKSdcdTAwMGRcdTAwMGEgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcUHJvZHVjdGlvbi5odG1sIiwiV2lkdGgiOjY1MH0=
+      instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+    }
+    cx : 650
+    cy : 300
+  }
+  MatchDisplay : {
+    class : CLRBrowserSource
+    data : {
+      sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoyMDAsIklzQXBwbHlpbmdUZW1wbGF0ZSI6ZmFsc2UsIklzU2hvd2luZ0FkdmFuY2VkUHJvcGVydGllcyI6ZmFsc2UsIk9wYWNpdHkiOjEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3RcdTAwMGRcdTAwMGEgICAgICB0eXBlPSckKE1JTUVUWVBFKSdcdTAwMGRcdTAwMGEgICAgICB3aWR0aD0nJChXSURUSCknXHUwMDBkXHUwMDBhICAgICAgaGVpZ2h0PSckKEhFSUdIVCknXHUwMDBkXHUwMDBhICAgICAgZGF0YT0nJChGSUxFKSdcdTAwMGRcdTAwMGEgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcL3RmMmNhbWVyYVwvUGVyR2FtZVBpY3NcL2h0bWxwYWdlc1wvTWF0Y2hEaXNwbGF5Lmh0bWwiLCJXaWR0aCI6ODAwfQ==
+      instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+    }
+    cx : 800
+    cy : 200
+  }
+  ProductionLogo : {
+    class : BitmapImageSource
+    data : {
+      path : "C:\\tf2camera\\StaticPictures\\ProductionLogo.png"
+      opacity : 100
+      color : -1
+      useColorKey : 0
+      keyColor : -1
+      keySimilarity : 10
+      keyBlend : 0
+      monitor : 0
+    }
+    cx : 554
+    cy : 231
+  }
+  Lightbox80 : {
+    class : BitmapImageSource
+    data : {
+      path : "C:\\tf2camera\\StaticPictures\\PureBlack1080p.png"
+      opacity : 80
+      color : -1
+      useColorKey : 0
+      keyColor : -1
+      keySimilarity : 10
+      keyBlend : 0
+      monitor : 0
+    }
+    cx : 1920
+    cy : 1080
+  }
+  LightBox60 : {
+    class : BitmapImageSource
+    data : {
+      path : "C:\\tf2camera\\StaticPictures\\PureBlack1080p.png"
+      opacity : 60
+      color : -1
+      useColorKey : 0
+      keyColor : -1
+      keySimilarity : 10
+      keyBlend : 0
+      monitor : 0
+    }
+    cx : 1920
+    cy : 1080
+  }
+  MatchDisplay_WithTeams : {
+    class : CLRBrowserSource
+    data : {
+      sourceSettings : eyJDU1MiOiJib2R5IHtcdTAwMGRcdTAwMGEgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMCk7XHUwMDBkXHUwMDBhICBtYXJnaW46IDBweCBhdXRvO1x1MDAwZFx1MDAwYSAgb3ZlcmZsb3c6IGhpZGRlbjtcdTAwMGRcdTAwMGF9XHUwMDBkXHUwMDBhIiwiRnBzIjozMCwiSGVpZ2h0IjoxMDgwLCJJc0FwcGx5aW5nVGVtcGxhdGUiOmZhbHNlLCJJc1Nob3dpbmdBZHZhbmNlZFByb3BlcnRpZXMiOnRydWUsIk9wYWNpdHkiOjAuOTU5MDE2MzkzNDQyNjIyOTEsIlRlbXBsYXRlIjoiPGh0bWw+XHUwMDBkXHUwMDBhICA8aGVhZD5cdTAwMGRcdTAwMGEgXHUwMDA5ICA8bWV0YSBjaGFyc2V0PSd1dGYtOCdcLz5cdTAwMGRcdTAwMGEgICAgICAgPHN0eWxlPlx1MDAwZFx1MDAwYSAgICAgICAgIGJvZHkge1x1MDAwZFx1MDAwYSAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTtcdTAwMGRcdTAwMGEgICAgICAgICAgIG1hcmdpbjogMHB4IGF1dG87XHUwMDBkXHUwMDBhICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1x1MDAwZFx1MDAwYSAgICAgICAgIH1cdTAwMGRcdTAwMGEgICAgICAgPFwvc3R5bGU+XHUwMDBkXHUwMDBhICA8XC9oZWFkPlx1MDAwZFx1MDAwYSAgPGJvZHk+XHUwMDBkXHUwMDBhICAgIDxvYmplY3RcdTAwMGRcdTAwMGEgICAgICB0eXBlPSckKE1JTUVUWVBFKSdcdTAwMGRcdTAwMGEgICAgICB3aWR0aD0nJChXSURUSCknXHUwMDBkXHUwMDBhICAgICAgaGVpZ2h0PSckKEhFSUdIVCknXHUwMDBkXHUwMDBhICAgICAgZGF0YT0nJChGSUxFKSdcdTAwMGRcdTAwMGEgICAgICB3bW9kZT0ndHJhbnNwYXJlbnQnPlx1MDAwZFx1MDAwYSAgICA8XC9vYmplY3Q+XHUwMDBkXHUwMDBhICA8XC9ib2R5Plx1MDAwZFx1MDAwYTxcL2h0bWw+XHUwMDBkXHUwMDBhIiwiVXJsIjoiQzpcXHRmMmNhbWVyYVxcUGVyR2FtZVBpY3NcXGh0bWxwYWdlc1xcTWF0Y2hEaXNwbGF5X1dpdGhUZWFtcy5odG1sIiwiV2lkdGgiOjE5MjB9
+      instanceSettings : eyJBcHBsaWNhdGlvbkNhY2hlIjowLCJDYXJldEJyb3dzaW5nIjowLCJDdXJzaXZlRm9udEZhbWlseSI6bnVsbCwiRGF0YWJhc2VzIjowLCJEZWZhdWx0RW5jb2RpbmciOm51bGwsIkRlZmF1bHRGaXhlZEZvbnRTaXplIjowLCJEZWZhdWx0Rm9udFNpemUiOjAsIkZhbnRhc3lGb250RmFtaWx5IjpudWxsLCJGaWxlQWNjZXNzRnJvbUZpbGVVcmxzIjoxLCJGaXhlZEZvbnRGYW1pbHkiOm51bGwsIkltYWdlTG9hZGluZyI6MCwiSW1hZ2VTaHJpbmtTdGFuZGFsb25lVG9GaXQiOjAsIkphdmEiOjAsIkphdmFTY3JpcHQiOjAsIkphdmFTY3JpcHRBY2Nlc3NDbGlwYm9hcmQiOjAsIkphdmFTY3JpcHRDbG9zZVdpbmRvd3MiOjAsIkphdmFTY3JpcHREb21QYXN0ZSI6MCwiSmF2YVNjcmlwdE9wZW5XaW5kb3dzIjowLCJMb2NhbFN0b3JhZ2UiOjAsIk1pbmltdW1Gb250U2l6ZSI6MCwiTWluaW11bUxvZ2ljYWxGb250U2l6ZSI6MCwiUGFnZUNhY2hlIjowLCJQbHVnaW5zIjowLCJSZW1vdGVGb250cyI6MCwiU2Fuc1NlcmlmRm9udEZhbWlseSI6bnVsbCwiU2VyaWZGb250RmFtaWx5IjpudWxsLCJTdGFuZGFyZEZvbnRGYW1pbHkiOm51bGwsIlVuaXZlcnNhbEFjY2Vzc0Zyb21GaWxlVXJscyI6MSwiV2ViR0wiOjAsIldlYlNlY3VyaXR5IjoyfQ==
+    }
+    cx : 1920
+    cy : 1080
+  }
+  ScrollingWaiting_Prior : {
+    class : TextSource
+    data : {
+      baseSizeCX : 550
+      baseSizeCY : 300
+      font : Roboto Thin
+      color : -1
+      fontSize : 75
+      textOpacity : 100
+      scrollSpeed : 0
+      bold : 1
+      italic : 0
+      vertical : 0
+      wrap : 1
+      scrollMode : 0
+      underline : 0
+      pointFiltering : 0
+      backgroundColor : -16777216
+      backgroundOpacity : 0
+      useOutline : 1
+      outlineColor : -16777216
+      outlineSize : 3
+      outlineOpacity : 100
+      useTextExtents : 1
+      extentWidth : 550
+      extentHeight : 300
+      align : 1
+      file : "C:\\tf2camera\\PerGamePics\\Text\\pregame-scroll.txt"
+      text : 
+      mode : 1
+    }
+    cx : 550
+    cy : 300
+  }
+  ScrollingWaiting_Midgame : {
+    class : TextSource
+    data : {
+      baseSizeCX : 500
+      baseSizeCY : 300
+      font : Roboto Thin
+      color : -1
+      fontSize : 80
+      textOpacity : 100
+      scrollSpeed : 0
+      bold : 1
+      italic : 0
+      vertical : 0
+      wrap : 1
+      scrollMode : 0
+      underline : 0
+      pointFiltering : 0
+      backgroundColor : -16777216
+      backgroundOpacity : 0
+      useOutline : 1
+      outlineColor : -16777216
+      outlineSize : 2
+      outlineOpacity : 100
+      useTextExtents : 1
+      extentWidth : 500
+      extentHeight : 300
+      align : 1
+      file : "C:\\tf2camera\\PerGamePics\\Text\\midgame-scroll.txt"
+      text : 
+      mode : 1
+    }
+    cx : 500
+    cy : 300
+  }
+  ScrollingText_EndGame : {
+    class : TextSource
+    data : {
+      baseSizeCX : 600
+      baseSizeCY : 600
+      font : Roboto
+      color : -1
+      fontSize : 80
+      textOpacity : 100
+      scrollSpeed : 0
+      bold : 0
+      italic : 0
+      vertical : 0
+      wrap : 1
+      scrollMode : 0
+      underline : 0
+      pointFiltering : 0
+      backgroundColor : -16777216
+      backgroundOpacity : 0
+      useOutline : 1
+      outlineColor : -16777216
+      outlineSize : 2
+      outlineOpacity : 100
+      useTextExtents : 1
+      extentWidth : 600
+      extentHeight : 600
+      align : 1
+      file : "C:\\tf2camera\\PerGamePics\\Text\\endgame-scroll.txt"
+      text : 
+      mode : 1
+    }
+    cx : 600
+    cy : 600
+  }
+  LightBox95 : {
+    class : BitmapImageSource
+    data : {
+      path : "C:\\tf2camera\\StaticPictures\\PureBlack1080p.png"
+      opacity : 95
+      color : -1
+      useColorKey : 0
+      keyColor : -1
+      keySimilarity : 10
+      keyBlend : 0
+      monitor : 0
+    }
+    cx : 1920
+    cy : 1080
+  }
+  Logs : {
+    class : WindowCaptureSource
+    data : {
+      captureType : 1
+      monitor : 0
+      window : "Dunning-Kruger Effect: RED vs corsa – logs.tf - Google Chrome"
+      windowClass : Chrome_WidgetWin_1
+      innerWindow : 1
+      regionCapture : 1
+      captureMouse : 0
+      captureLayered : 0
+      compatibilityMode : 0
+      usePointFiltering : 0
+      captureX : 544
+      captureY : 335
+      captureCX : 818
+      captureCY : 659
+      useColorKey : 0
+      keyColor : -1
+      keySimilarity : 10
+      keyBlend : 0
+      opacity : 100
+      gamma : 100
+    }
+    cx : 818
+    cy : 659
+  }
+  BackgroundLoop : {
+    class : VideoSource
+    data : {
+      width : 1920
+      height : 1080
+      volume : 0
+      isStretching : 0
+      isAudioOutputToStream : 1
+      audioOutputType : adummy
+      audioOutputTypeDevice : adummy
+      audioOutputDevice : 
+      isPlaylistLooping : 1
+      deinterlacing : none
+      isApplyingVideoFilter : 0
+      videoGamma : 100
+      videoContrast : 100
+      videoBrightness : 100
+      playlist : "C:\\tf2camera\\StaticPictures\\VideoBlur.mp4"
+    }
+    cx : 1920
+    cy : 1080
+  }
+}
