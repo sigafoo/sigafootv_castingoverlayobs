@@ -4,9 +4,9 @@ Howdy, I'm sigafoo. I've been casting in tf2 for almost three years now and star
 
 ### Prerequisities
 
-OBS Classic: https://obsproject.com/
-CLR Plugin for obs classic: https://obsproject.com/forum/resources/clr-browser-source-plugin.22/
-Video source plugin for obs classic: https://obsproject.com/forum/resources/video-source-plugin.20/
+* OBS Classic: https://obsproject.com/
+* CLR Plugin for obs classic: https://obsproject.com/forum/resources/clr-browser-source-plugin.22/
+* Video source plugin for obs classic: https://obsproject.com/forum/resources/video-source-plugin.20/
 
 ```
 NOTE: You definitely can use obs studios, but you'll have to manually build the scenes.
