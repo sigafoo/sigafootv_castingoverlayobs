@@ -1,6 +1,8 @@
 # sigafoo.tv obs casting overlay
 
-Howdy, I'm sigafoo. I've been casting in tf2 for almost three years now and started doing my own production work about a half year ago. I realized that there wasn't a lot of resources on how to cast... do camera... production... anything. I'm trying to make a base that is customizable and make it quick and easy for people to start up their own production.
+Howdy, I'm sigafoo. I've been casting in tf2 for over three years now and have started doing my own production work about a half year ago. I realized that there wasn't a lot of resources on how to cast... do camera... production... anything. I'm trying to make a base that is customizable and easy for people to start up their own production.
+
+Also check out http://sigafoo.tv/casting for more casting help
 
 ### Prerequisities
 
