@@ -175,6 +175,15 @@ scenes : {
         crop.right : 0
         crop.bottom : 0
       }
+      LightBox60 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : LightBox60
+        }
+        cx : 1920
+        cy : 1080
+      }
       TF2 : {
         render : 1
         class : GlobalSource
@@ -657,10 +666,28 @@ scenes : {
         crop.bottom : 0
       }
       BackgroundLoop : {
-        render : 1
+        render : 0
         class : GlobalSource
         data : {
           name : BackgroundLoop
+        }
+        cx : 1920
+        cy : 1080
+      }
+      LightBox60 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : LightBox60
+        }
+        cx : 1920
+        cy : 1080
+      }
+      TF2 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : TF2
         }
         cx : 1920
         cy : 1080
@@ -967,6 +994,15 @@ scenes : {
         crop.top : 0
         crop.right : 0
         crop.bottom : 0
+      }
+      LightBox60 : {
+        render : 1
+        class : GlobalSource
+        data : {
+          name : LightBox60
+        }
+        cx : 1920
+        cy : 1080
       }
       TF2 : {
         render : 1
